@@ -5,17 +5,26 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Stylist Portfolio</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#gallery">Gallery</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+    <header>
+        <h1>Esme Stylist</h1>
+        <button class="menu-button">&#9776;</button>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Menu &#9662;</a>
+                    <div class="dropdown-container">
+                      <ul class="dropdown-menu">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                      </ul>
+                    </div>
+                  </li>                  
+            </ul>
+          </nav>                
+      </header>
+      
 
 	<main>
 		<section id="about">
@@ -56,6 +65,7 @@
 	<footer>
 		<p>&copy; Stylist Portfolio 2023</p>
 	</footer>
+    <script src="script.js"></script>
 
 </body>
 </html>

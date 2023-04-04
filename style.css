@@ -1,0 +1,155 @@
+/* Global styles */
+
+  /* Show the hamburger menu button on screens 850px and smaller */
+  .menu-button {
+    display: none;
+  }
+  
+  /* Styles for the active hamburger menu */
+  .menu-button.active + nav ul {
+    display: block;
+  }
+
+  /* Hide the dropdown menu by default */
+.dropdown-menu {
+    display: none;
+  }
+  
+  /* Show the dropdown menu when the "active" class is added */
+  .dropdown-menu.active {
+    display: block;
+  }
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Position the dropdown container relative to the menu button */
+.dropdown {
+    position: relative;
+  }
+  
+  /* Position the dropdown menu absolutely below the dropdown container */
+  .dropdown-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  
+  /* Hide the dropdown menu by default */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  /* Show the dropdown menu when the "active" class is added */
+  .dropdown-menu.active {
+    display: block;
+  }
+  
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Styles for individual sections */
+
+#about {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+#services {
+    background-color: #fff;
+    padding: 20px;
+}
+
+#services li {
+    margin: 10px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+#contact {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Styles for responsive design */
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    .gallery img {
+        width: 100%;
+    }
+}
+
+/* Hide the regular navigation menu on screens 850px and smaller */
+@media only screen and (max-width: 850px) {
+    nav ul {
+      display: none;
+    }
+    
+    .menu-button {
+      display: block;
+    }
+  }
+  
+
+  
